@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head>
+        <meta charset='utf8'>
+        <title>Angular Express Seed App</title>
+        <link rel='stylesheet' href='lib/bootstrap/css/bootstrap-theme.min.css'>
+        <link rel='stylesheet' href='lib/bootstrap/css/bootstrap.min.css'>
+        <link rel='stylesheet' href='css/main.css'>
+
+        <base href="/">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <h2>My Blog</h2>
+            <nav>
+                <ul class="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#!/blog">Blog</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Angular view partial -->
+        <div ng-view>
+        </div>
+
+        <!-- Footer -->
+        <footer></footer>
+
+        <!-- Lib scripts -->
+        <script src="lib/jquery/jquery-3.2.1.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/moment/moment-with-locales.js"></script>
+        <script src="lib/moment/moment-timezone-with-data.js"></script>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-route.js"></script>
+
+        <!-- Angular app -->
+        <script src="js/app.module.js"></script>
+
+        <!-- Angular services -->
+        <script src="js/services/example.service.js"></script>
+        <script src="js/services/blogpost.service.js"></script>
+
+        <!-- Angular filters -->
+        <script src="js/filters/example.filter.js"></script>
+
+        <!-- Angular directives -->
+        <script src="js/directives/example.directive.js"></script>
+
+        <!-- Angular controllers -->
+        <script src="js/controllers/index.controller.js"></script>
+        <script src="js/controllers/blogpost.controller.js"></script>
+
+        <!-- Custom scripts -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
