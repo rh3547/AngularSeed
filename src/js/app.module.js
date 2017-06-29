@@ -15,7 +15,11 @@ angular.module("myApp", [
     "myApp.IndexController",
     "myApp.BlogPostController"
 ]).
-config(function ($interpolateProvider, $routeProvider, $locationProvider) {
+config(function ($interpolateProvider, $routeProvider, $locationProvider, $httpProvider) {
+    $httpProvider.defaults.headers['post']['Access-Control-Allow-Origin'] = "*";
+    $httpProvider.defaults.headers['put']['Access-Control-Allow-Origin'] = "*";
+    $httpProvider.defaults.headers['delete'] = {};
+    $httpProvider.defaults.headers['delete']['Access-Control-Allow-Origin'] = "*";
 
     // Index Route
     $routeProvider.
