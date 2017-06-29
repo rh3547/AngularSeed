@@ -2,7 +2,7 @@
 
 angular.module('myApp.BlogPostService', [])
 .service('BlogPostService', function($http) {
-    var apiUrl = "http://localhost:3030";
+    var apiUrl = "http://localhost:3001";
 
     /**
      * getAllPosts
